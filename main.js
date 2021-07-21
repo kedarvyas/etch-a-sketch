@@ -1,13 +1,29 @@
 const container = document.getElementById("main-container");
+const grid = document.getElementById("grid");
 
-function makeRows(rows, cols) {
-    container.style.setProperty('--grid-rows', rows);
-    container.style.setProperty('--grid-cols', cols);
-    for (c = 0; c < (rows * cols); c++) {
-      let cell = document.createElement("div");
-      cell.innerText = (c + 1);
-      container.appendChild(cell).className = "grid-item";
-    };
-  };
-  
-  makeRows(16, 16);
+function makeGrid(size) {
+    for (let index = 0; index < size * size; index++) {
+        let div = document.createElement('div')
+        grid.style.gridTemplateColumns = `repeat(${size}, 1fr)`
+        grid.style.gridTemplateRows = `repeat(${size}, 1fr)`
+        grid.appendChild(div).className = 'div'
+    }
+
+    // changes color of grid when hovered
+    let squares = document.querySelectorAll('.div')
+    squares.forEach(square => {
+        square.addEventListener('mouseover', () => {
+            let randomColor = `rgb(${Math.floor(Math.random() * 254)}, ${Math.floor(Math.random() * 254)}, ${Math.floor(Math.random() * 254)})`
+            square.style.backgroundColor = randomColor
+        })
+    })
+}
+
+makeGrid(16);
+
+function clearGrid() {
+    let squares = document.querySelectorAll('.div')
+    squares.forEach(square => {
+        square.style.backgroundColor = '#fff'
+    })
+}

@@ -1,3 +1,19 @@
+#main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 115vh;
+}
+
+#grid {
+    display: grid;
+    height: 70vh;
+    width: 70vh;
+    border: 5px solid black;
+}
+
+/*
 :root {
     --grid-cols: 1;
     --grid-rows: 1;
@@ -15,3 +31,49 @@
     border: 1px solid #ddd;
     text-align: center;
 }
+
+
+body {
+    background-color: #fed766;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#header {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px 20px auto;
+    text-transform: uppercase;
+}
+
+#clearButton {
+    margin: 30px auto;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 20px;
+    border: 4px solid black;
+    outline: none;
+}
+
+.container {
+    border: 5px solid black;
+    height: 600px;
+    width: 600px;
+    margin: 0 auto;
+    padding: 0px;
+    background-color: black;
+}
+
+.grid {
+    display: inline-block;
+    background-color: #1C86EE;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: content-box;
+}
+
+*/
