@@ -1,7 +1,8 @@
 const container = document.getElementById("main-container");
 const grid = document.getElementById("grid");
-const toggleBtn = document.getElementById("border");
+//const toggleBtn = document.getElementById("border");
 const clearBtn = document.getElementById("clear")
+
 
 function makeGrid(size) {
     for (let index = 0; index < size * size; index++) {
@@ -26,10 +27,11 @@ makeGrid(16);
 function clearGrid() {
     let squares = document.querySelectorAll('.div')
     squares.forEach(square => {
-        square.style.backgroundColor = '#fff'
+        square.style.backgroundColor = '#fff';
     })
 }
 
+/*
 toggleBtn.addEventListener('click', () => {
     let squares = document.querySelectorAll('.div')
     squares.forEach(square => {
@@ -37,10 +39,13 @@ toggleBtn.addEventListener('click', () => {
     })
 })
 
-function clearGrid() {    	
+*/
+
+function reset() {    	
     var reqGridSize = prompt('How many squares per side?'); 
 
     if (reqGridSize >= 1 && reqGridSize <= 100) { 
+        clearGrid();
         makeGrid(reqGridSize); // create new grid 
     } else {
         alert ('Choose a number between 1-100'); 
@@ -48,5 +53,7 @@ function clearGrid() {
     }
 }
 
-clearBtn.addEventListener('click', clearGrid); 
+clearBtn.addEventListener('click', reset); 
 window.onload = makeGrid(16); // on page load, create a 16 x 16 grid
+
+

@@ -9,53 +9,32 @@ html {
 }
 
 h1 {
+    display: center;
+    box-sizing: content-box;
     font-family: monaco, Consolas, "Lucida Console", monospace;
     font-weight: 1000;
     font-size: 45px;
-    color: whitesmoke;
-    /*
-    border: 0.75rem solid whitesmoke;
+    color: rgb(0, 0, 0);
+    border: 0.75rem solid black;
     border-radius: 7.5rem;
-    */
+    background-color: white;
     text-transform: uppercase;
     margin: 2.5rem;
     margin-top: 50px;
 }
 
-/*
 #btns {
     display: flex;
     flex: 1;
-    min-height: 5vh;
+    margin-top: 5px;
     align-items: center;
     justify-content: center;
-
-}
-*/
-
-#btns {
-    display: flex;
-    flex: 1;
-    margin-top: 50px;
-    align-items: center;
-    justify-content: center;
-}
-
-#border {
-    border: 0.25rem solid rgb(0, 0, 0);
-    border-radius: 2.5rem;
-    margin: 0.5rem;
-    font-size: 1.25rem;
-    padding: 2.5rem 0.75rem;
-    width: 7.5rem;
-    text-align: center;
-    color: black;
-    background: white;
 }
 
 #clear {
+    font-family: monaco, Consolas, "Lucida Console", monospace;
     border: 0.25rem solid rgb(0, 0, 0);
-    border-radius: 2.5rem;
+    border-radius: 7.5rem;
     margin: 0.5rem;
     font-size: 1.25rem;
     padding: 2.5rem 0.75rem;
@@ -81,77 +60,26 @@ h1 {
     border: 5px solid black;
 }
 
-/*
-button {
-    padding: 5px
-}
-*/
-
 .border {
     border: 1px solid;
 }
 
-/*
-:root {
-    --grid-cols: 1;
-    --grid-rows: 1;
-}
-
-#main-container {
-    display: grid;
-    grid-gap: 1em;
-    grid-template-rows: repeat(var(--grid-rows), 1fr);
-    grid-template-columns: repeat(var(--grid-cols), 1fr);
-}
-
-.grid-item {
-    padding: 1em;
-    border: 1px solid #ddd;
+#footer {
+    font-family: monaco, Consolas, "Lucida Console", monospace;
+    font-weight: 500;
+    font-size: 24px;
     text-align: center;
+    margin-top: 15px;
+    color: #000000;
 }
 
-
-body {
-    background-color: #fed766;
-    font-family: 'Baloo Bhai', cursive;
-}
-
-#header {
-    text-align: center;
-}
-
-h1 {
-    text-align: center;
-    margin: 30px 20px auto;
-    text-transform: uppercase;
-}
-
-#clearButton {
-    margin: 30px auto;
-    border-radius: 20px;
-    font-size: 20px;
+#footlink {
+    color: #fcfcfc;
     font-weight: bold;
-    padding: 5px 20px;
-    border: 4px solid black;
-    outline: none;
+    transition: all 0.2s;
 }
 
-.container {
-    border: 5px solid black;
-    height: 600px;
-    width: 600px;
-    margin: 0 auto;
-    padding: 0px;
-    background-color: black;
+#footlink:hover {
+    color: #57e9e9;
+    transition: all 0.2s;
 }
-
-.grid {
-    display: inline-block;
-    background-color: #1C86EE;
-    border: none;
-    margin: 0px;
-    padding: 0px;
-    box-sizing: content-box;
-}
-
-*/
