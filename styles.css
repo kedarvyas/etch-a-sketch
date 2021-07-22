@@ -1,16 +1,98 @@
+html {
+    font-size: 10px;
+    background-color: #ef7079;
+    background-size: cover;
+}
+
+#header {
+    text-align: center;
+}
+
+h1 {
+    font-family: monaco, Consolas, "Lucida Console", monospace;
+    font-weight: 1000;
+    font-size: 45px;
+    color: whitesmoke;
+    /*
+    border: 0.75rem solid whitesmoke;
+    border-radius: 7.5rem;
+    */
+    text-transform: uppercase;
+    margin: 10rem;
+    margin-top: 50px;
+}
+
+/*
+#btns {
+    display: flex;
+    flex: 1;
+    min-height: 5vh;
+    align-items: center;
+    justify-content: center;
+
+}
+*/
+
+#btns {
+    display: flex;
+    flex: 1;
+    min-height: 45vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#border {
+    border: 0.75rem solid whitesmoke;
+    border-radius: 5rem;
+    margin: 0.75rem;
+    font-size: 1.5rem;
+    padding: 2.5rem 0.75rem;
+    transition: all .08s ease;
+    width: 7.5rem;
+    text-align: center;
+    color: white;
+    background: rgba(26, 226, 210, 0.4);
+    text-shadow: 2.5 2.5 .25rem rgb(240, 240, 240);
+}
+
+#clear {
+    border: 0.75rem solid whitesmoke;
+    border-radius: 5rem;
+    margin: 0.75rem;
+    font-size: 1.5rem;
+    padding: 2.5rem 0.75rem;
+    transition: all .08s ease;
+    width: 7.5rem;
+    text-align: center;
+    color: white;
+    background: rgba(26, 226, 210, 0.4);
+    text-shadow: 2.5 2.5 .25rem rgb(240, 240, 240);
+}
+
 #main-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: 115vh;
+    height: 75vh;
 }
 
 #grid {
     display: grid;
+    background-color: white;
     height: 70vh;
     width: 70vh;
     border: 5px solid black;
+}
+
+/*
+button {
+    padding: 5px
+}
+*/
+
+.border {
+    border: 1px solid;
 }
 
 /*
